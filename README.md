@@ -104,5 +104,3 @@ This is how this bash script will automate so much in less time.
 
 This is all about today...
 
-Thank you
-Lavakumar H N
