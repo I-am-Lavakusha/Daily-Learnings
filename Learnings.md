@@ -105,5 +105,44 @@ This is how this bash script will automate so much in less time.
 
 This is all about today...
 
-Thank you
-Lavakumar H N
+28-11-2025
+
+Today, I focused on understanding the P4 programming language and how it is reshaping the SONiC ecosystem. Here is a summary of my  learnings and how these technologies interact.
+
+I learned that P4 (Programming Protocol-independent Packet Processors) is a domain-specific language it gives us control over the Data Plane.
+Unlike traditional switches that have fixed behaviour, P4 allows us to define exactly how the switch parser processes a packet.
+The most important part is that the how this p4 is used in these sonic.
+This will be integrated with the PINS that is the stack.
+PINS allows sonic to run in a hybrid mode. It keeps the traditional protocols but adds an SDN (Software Defined Networking) layer.
+P4 runtime is the interface that lets an external controller push rules to the SONiC switch, bypassing the traditional SAI/Command Line flow.
+I found that the community uses sai.p4 to create a behavioral model of the Switch Abstraction Interface (SAI), which helps standardized how the software talks to the ASIC.
+The combination of P4 and SONiC transforms the network from a static pipe into a programmable platform. 
+It allows us to introduce new features without waiting for hardware vendors to update their silicon.
+
+After this I started doing test script executions in the given topology.
+
+Also I have created the bash scripts for checking the disk space in the linux machine.
+#!/bin/bash
+df -h
+free -g
+nproc 
+
+The above script can be  written in a good practice
+
+#!/bin/bash
+set -x
+df -h
+free -g
+nproc 
+
+This set -x will make the output in a debug mode where the developers or the users who uses it will able to understand which shell command is used.
+
+Also learnt the syntax of if 
+if [ a == b ];
+then 
+echo "they are equal"
+fi; 
+This is how we can use if in bash scripts. And used for loops and if loops together to write some shell scripts.
+
+
+This is all about today...
